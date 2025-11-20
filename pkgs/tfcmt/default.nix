@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   pname = "tfcmt";
-  version = "v4.14.12";
+  version = "v4.14.11";
 
   src = fetchFromGitHub {
     owner = "suzuki-shunsuke";
     repo = "tfcmt";
-    rev = "4836eb9e4acbd0b5be7dfaf14a00df771322f0a6"; # v4.14.12
-    hash = "sha256-S7zH8TxRRzRjLG9b3ixeCsOdMwNU10W6jFoqILPuGPs=";
+    rev = "7caae6525b6de3681af146188e9e7b010c8559f7"; # v4.14.11
+    hash = "sha256-ivMpjQqfmgKKNGqD/gZUT7z1II1JoO5GlSb5NMXvHLg=";
   };
 
-  vendorHash = "sha256-f/dKs9MkhSrWrmbmJLDMUDDwgrwWMs1q0WKnfHVioyU=";
+  vendorHash = "sha256-O/T67nOpwnqHqPNnNMvwYp9fG+Qrw8GrCa+LAHnKE/s=";
   ldflags = [ "-X=main.Version=${version}" ];
   doCheck = false;
 
