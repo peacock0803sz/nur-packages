@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   tfcmt = pkgs.callPackage ./pkgs/tfcmt { };
+  gwq = pkgs.callPackage ./pkgs/gwq { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
