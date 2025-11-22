@@ -1,8 +1,8 @@
-{ lib, buildGoModule, fetchFromGitHub }:
+{ lib, buildGo125Module, fetchFromGitHub }:
 let
   version = "v4.14.12";
 in
-buildGoModule {
+buildGo125Module {
   pname = "tfcmt";
   version = version;
 
