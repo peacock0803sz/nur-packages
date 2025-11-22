@@ -1,25 +1,26 @@
 { lib, buildGoModule, fetchFromGitHub }:
-
-buildGoModule rec {
+let
+  version = "v4.14.12";
+in
+buildGoModule {
   pname = "tfcmt";
-  version = "v4.14.11";
+  version = version;
 
   src = fetchFromGitHub {
     owner = "suzuki-shunsuke";
     repo = "tfcmt";
-    rev = "7caae6525b6de3681af146188e9e7b010c8559f7"; # v4.14.11
+    rev = version;
     hash = "sha256-ivMpjQqfmgKKNGqD/gZUT7z1II1JoO5GlSb5NMXvHLg=";
   };
 
   vendorHash = "sha256-O/T67nOpwnqHqPNnNMvwYp9fG+Qrw8GrCa+LAHnKE/s=";
-  ldflags = [ "-X=main.Version=${version}" ];
-  doCheck = false;
+  ldflags = [ "-s" "-w" "-X=main.version=${version}" ];
 
-  meta = with lib; {
+  meta = {
     description = "tfcmt enhances mercari/tfnotify in many ways, including Terraform >= v0.15 support and advanced formatting options";
     homepage = "https://suzuki-shunsuke.github.io/tfcmt/";
-    license = licenses.mit;
-    platforms = platforms.all;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.all;
     mainProgram = "tfcmt";
   };
 }
