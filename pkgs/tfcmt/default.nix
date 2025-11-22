@@ -10,10 +10,10 @@ buildGoModule {
     owner = "suzuki-shunsuke";
     repo = "tfcmt";
     rev = version;
-    hash = "sha256-ivMpjQqfmgKKNGqD/gZUT7z1II1JoO5GlSb5NMXvHLg=";
+    hash = "sha256-S7zH8TxRRzRjLG9b3ixeCsOdMwNU10W6jFoqILPuGPs=";
   };
 
-  vendorHash = "sha256-O/T67nOpwnqHqPNnNMvwYp9fG+Qrw8GrCa+LAHnKE/s=";
+  vendorHash = "sha256-f/dKs9MkhSrWrmbmJLDMUDDwgrwWMs1q0WKnfHVioyU=";
   ldflags = [ "-s" "-w" "-X=main.version=${version}" ];
 
   meta = {
