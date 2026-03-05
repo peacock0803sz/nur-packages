@@ -59,7 +59,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          if git diff --quiet; then
+          if git diff --quiet "pkgs/${{ matrix.package }}/default.nix"; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
