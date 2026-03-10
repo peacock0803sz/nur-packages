@@ -16,7 +16,6 @@
 
   deck = pkgs.callPackage ./pkgs/deck { };
   gwq = pkgs.callPackage ./pkgs/gwq { };
-  gws = pkgs.callPackage ./pkgs/gws { };
   mado = pkgs.callPackage ./pkgs/mado { };
   notizen = pkgs.callPackage ./pkgs/mado { };
   tfcmt = pkgs.callPackage ./pkgs/tfcmt { };
