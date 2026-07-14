@@ -20,6 +20,7 @@
   mado = pkgs.callPackage ./pkgs/mado { };
   notizen = pkgs.callPackage ./pkgs/mado { };
   tfcmt = pkgs.callPackage ./pkgs/tfcmt { };
+  vde-layout = pkgs.callPackage ./pkgs/vde-layout { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
