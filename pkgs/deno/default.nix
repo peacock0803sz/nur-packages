@@ -7,7 +7,7 @@
 }:
 
 let
-  version = "2.8.1";
+  version = "2.9.2";
 
   targets = {
     "x86_64-linux" = "x86_64-unknown-linux-gnu";
@@ -16,7 +16,7 @@ let
   };
 
   hashes = {
-    "x86_64-linux" = "sha256-LXu2GVImrIMuC/cQmhFfCvZe5prHl6S73lsnoGzCQtk=";
+    "x86_64-linux" = "sha256-k00b1csJ6u1/LkpPxYII0Eo8XA/N6fMZ2T1zUmXGeko=";
     "aarch64-linux" = "sha256-kzpqfSmFlXJxzSCFpaWhgyOYqiIaNU2qtWNRls8su64=";
     "aarch64-darwin" = "sha256-26gTuLadYhjP+xElK55OYDbKLJ15hDzeNntLNpqvljQ=";
   };
