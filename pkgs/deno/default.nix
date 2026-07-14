@@ -17,7 +17,7 @@ let
 
   hashes = {
     "x86_64-linux" = "sha256-LXu2GVImrIMuC/cQmhFfCvZe5prHl6S73lsnoGzCQtk=";
-    "aarch64-linux" = "sha256-kzpqfSmFlXJxzSCFpaWhgyOYqiIaNU2qtWNRls8su64=";
+    "aarch64-linux" = "sha256-Z+nfkYcP0K9wDfkkFz4wCep/9pVuLDw7uGBl1gcND9Y=";
     "aarch64-darwin" = "sha256-26gTuLadYhjP+xElK55OYDbKLJ15hDzeNntLNpqvljQ=";
   };
 
