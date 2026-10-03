@@ -1,6 +1,6 @@
 { lib, buildGo126Module, fetchFromGitHub }:
 let
-  version = "0.2.59";
+  version = "0.2.60";
 in
 buildGo126Module {
   pname = "langsmith-cli";
@@ -10,10 +10,10 @@ buildGo126Module {
     owner = "langchain-ai";
     repo = "langsmith-cli";
     tag = "v${version}";
-    hash = "sha256-6iqqOSU0D93/6RsvUuEPqGj2+xIwFrpaIoipPaNhPvY=";
+    hash = "sha256-mRK/Lo90iFE0HmOO+P8P3AbQjWthyNdjbgJoZu57r6M=";
   };
 
-  vendorHash = "sha256-t3gr1YMJ4N7KfJlFALuFf2eeZ87XvlOv8kKiu2RTqyg=";
+  vendorHash = "sha256-fUrMpRF0q7ZNkWe5Hadt23vEtWBKp7F5Jv8zGkKwlDA=";
 
   subPackages = [ "cmd/langsmith" ];
 
