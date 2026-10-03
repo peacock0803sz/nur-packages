@@ -3,4 +3,4 @@
 source 'https://rubygems.org'
 
 # The executable is `trmnlp`, the gem is `trmnl_preview`.
-gem 'trmnl_preview', '0.12.0'
+gem 'trmnl_preview', '0.14.2'
