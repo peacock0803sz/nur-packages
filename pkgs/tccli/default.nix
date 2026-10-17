@@ -1,6 +1,6 @@
 { lib, python3Packages, fetchFromGitHub }:
 let
-  version = "3.1.176.1";
+  version = "3.1.182.1";
   # Not in nixpkgs; kept private to tccli and bumped by hand.
   cos-python-sdk-v5 = python3Packages.callPackage ./cos-python-sdk-v5.nix { };
 in
@@ -13,7 +13,7 @@ python3Packages.buildPythonApplication {
     owner = "TencentCloud";
     repo = "tencentcloud-cli";
     tag = version;
-    hash = "sha256-xIT9yimHbEbA7DO062nhVGaZOOqVXlG0etv87KdFswI=";
+    hash = "sha256-s4C6P2+v+om4TU/z10D2xWUg4Q92ufLFibyx/3k1QaI=";
   };
 
   build-system = [ python3Packages.hatchling ];
