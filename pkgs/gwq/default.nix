@@ -1,6 +1,6 @@
 { lib, buildGo126Module, fetchFromGitHub }:
 let
-  version = "0.1.1";
+  version = "0.1.2";
 in
 buildGo126Module {
   pname = "gwq";
@@ -10,7 +10,7 @@ buildGo126Module {
     owner = "d-kuro";
     repo = "gwq";
     tag = "v${version}";
-    hash = "sha256-MfCYFbODWnfPxx+6sLlcMT6tqghgILHB13+ccYqVjBA=";
+    hash = "sha256-X1qkQUEhBqhMvdStN2YMj7nmqHWpO//y6afrBdAmVUI=";
   };
 
   vendorHash = "sha256-4K01Xf1EXl/NVX1loQ76l1bW8QglBAQdvlZSo7J4NPI=";
