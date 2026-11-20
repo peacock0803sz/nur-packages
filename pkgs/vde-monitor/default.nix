@@ -1,13 +1,13 @@
 { lib, stdenv, fetchFromGitHub, nodejs_24, pnpm_10, makeWrapper }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "vde-monitor";
-  version = "0.14.23";
+  version = "0.14.24";
 
   src = fetchFromGitHub {
     owner = "yuki-yano";
     repo = "vde-monitor";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-/c0dd3VPpq+Erjcx5ZpDEtX6EXNj2VPK8NUEv/7X5uw=";
+    hash = "sha256-vOnmJzzmx8RsohBVQOXTN0f4uyw42fVp/GIn0zRINyc=";
   };
 
   pnpmDeps = pnpm_10.fetchDeps {
